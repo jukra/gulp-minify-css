@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "no-undef": 0,
+    "new-cap": 0,
+    "quotes": 0,
+    "curly": 0,
+    "strict": 0,
+  },
+    "env": {
+    "node": true
+  },
+}

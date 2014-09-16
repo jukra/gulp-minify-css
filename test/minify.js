@@ -14,7 +14,7 @@ describe('gulp-minify-css minification', function() {
     keepSpecialComments: 1,
     keepBreaks: true
   };
-  
+
   describe('with buffers', function() {
     var filename = path.join(__dirname, './fixture/index.css');
     it('should minify my files', function(done) {
@@ -73,7 +73,7 @@ describe('does not loose other properties in the file object', function () {
     .pipe(es.map(function (file) {
       expect(file).to.equal(originalFile);
       done();
-    }))
+    }));
   });
   it('should preserve additional properties on the original file instance', function (done) {
     gulp.src(filename)
@@ -85,6 +85,6 @@ describe('does not loose other properties in the file object', function () {
     .pipe(es.map(function (file) {
       expect(file.someProperty).to.equal(42);
       done();
-    }))
+    }));
   });
 });
